@@ -28,7 +28,8 @@
 
 Сам подсунул удаленный продукт через POST на https://api.escuelajs.co/api/v1/products (ПОДГОНКА ДЛЯ ТЕСТА):
 
-```{
+```
+{
     "title": "Classic Black Hooded Sweatshirt",
     "price": 79,
     "description": "test product for VKurse homework",
