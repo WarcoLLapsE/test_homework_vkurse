@@ -24,8 +24,8 @@ def fake_products():
 
 @pytest.fixture
 def random_fake_product(fake_products):
-    filtered_products = [product for product in fake_products if product["price"] > 90
-                         and product['title'].startswith('Classic')]
+    filtered_products = [product for product in fake_products if product["price"] > 60
+                         and product['title'].startswith('Classic Black')]
     return random.choice(filtered_products)
 
 

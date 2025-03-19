@@ -8,9 +8,7 @@ def test_fake_product_search(random_fake_product, browser, select_option_by_part
     search_box_main = browser.find_element(By.CSS_SELECTOR, SEARCH_BOX_BUTTON)
     search_box_main.click()
     browser.implicitly_wait(2)
-    search_box_locator = (By.CSS_SELECTOR, SEARCH_BOX_FIELD)
-    dropdown_locator = (By.CSS_SELECTOR, SEARCH_RESULTS_BOX)
-    selected_option = select_option_by_partial_text(search_box_locator, dropdown_locator, "Classic")
+    select_option_by_partial_text(search_box_locator, dropdown_locator, "Classic")
 
     ### Считаем, что поиск произошел. После поиска отобразился выбранный товар на главной странице ###
 
